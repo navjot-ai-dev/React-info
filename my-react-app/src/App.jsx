@@ -1,6 +1,11 @@
 
 
 function App() {
+
+  const showalert = ()=>{
+    alert("welocome our first webpage I hope you like this UI")
+  }
+
   return (
     <div className="app">
     
@@ -10,7 +15,7 @@ function App() {
           <p>
             Build modern, fast and interactive user interfaces with React.
           </p>
-          <button>Learn More</button>
+          <button onClick={showalert}>Click me!</button>
         </div>
 
         <img
