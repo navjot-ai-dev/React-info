@@ -6,10 +6,14 @@ import Feature from './components/feature';
 import Code from './components/code';
 import Navbar from './components/navbar';
 
+
+
 function App() {
   return (
     <div className="app">
       <Navbar />
+      
+    
 
       <Routes>
         <Route path='/' element={<Home />} />
