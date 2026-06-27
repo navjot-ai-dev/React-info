@@ -9,7 +9,7 @@ const Home = () => {
           <p>
             Build modern, fast and interactive user interfaces with React.
           </p>
-          <button onClick={showalert}>Click me!</button>
+          <button>Click me!</button>
         </div>
 
         <img

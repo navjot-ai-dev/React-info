@@ -1,26 +1,24 @@
 import { Route, Routes } from 'react-router-dom';
-import About from './components/about'
+import About from './components/about';
 import Notfound from './pages/notfound';
 import Home from './components/home';
 import Feature from './components/feature';
 import Code from './components/code';
+import Navbar from './components/navbar';
 
 function App() {
-
- 
   return (
-
     <div className="app">
+      <Navbar />
 
       <Routes>
-        <Route path='*' element={<Notfound />} />
-         <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/feature' element={<Feature />} />
-        <Route path='/' element={<Code />} />
-
-       </Routes> 
-      
+        <Route path='/code' element={<Code />} />
+        {/* Keeps the catch-all wildcard at the bottom */}
+        <Route path='*' element={<Notfound />} />
+      </Routes> 
 
       <footer>
         <h3>Made With React ❤️</h3>
