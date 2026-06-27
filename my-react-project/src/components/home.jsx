@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
 
   const showalert = () =>{
-    alert('welcome to our website I hope you like it')
+    alert('welcome! to our website I hope you like it!')
   }
 
   return (
@@ -14,7 +14,7 @@ const Home = () => {
           <p>
             Build modern, fast and interactive user interfaces with React.
           </p>
-          <button>Click me!</button>
+          <button o>Click me!</button>
         </div>
 
         <img
