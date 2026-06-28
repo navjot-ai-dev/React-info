@@ -39,6 +39,25 @@ const About = () => {
         </p>
       </section>
 
+      <section className="card">
+        <h2>Why Was React Developed?</h2>
+        <p>
+          React was created to solve the problem of building complex and dynamic
+          user interfaces efficiently. It makes updating the UI faster using the
+          Virtual DOM.
+        </p>
+      </section>
+
+        <section className="card">
+        <h2>When Was React Developed?</h2>
+        <p>
+          React was first created in 2011 and officially released as an
+          open-source library in 2013 by Meta.
+        </p>
+      </section>
+
+
+
     </div>
   )
 }
