@@ -13,8 +13,8 @@ function App() {
     <div className="app">
       <Navbar />
       
-    
-
+     <div className='mt-10'>
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -23,6 +23,8 @@ function App() {
         {/* Keeps the catch-all wildcard at the bottom */}
         <Route path='*' element={<Notfound />} />
       </Routes> 
+
+     </div>
 
       <footer>
         <h3>Made With React ❤️</h3>

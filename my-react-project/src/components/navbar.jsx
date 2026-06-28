@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='h-15 w-full flex justify-evenly items-center flex-row text-2xl text-white font-semibold fixed top-0'
+    <div className='h-15 w-full flex justify-evenly items-center flex-row text-2xl text-white font-semibold'
     id='navbar'>
-            <h1>My website</h1>
+            <h1>React website </h1>
                 <div className='flex gap-8'>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>

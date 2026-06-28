@@ -1,13 +1,28 @@
 import React from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
+const [user, setuser] = useState('user')
+
   const showalert = () =>{
-    confirm('welcome! to our website I hope you like it.')
-    console.log(confirm);
-     {
+   const abc = confirm('welcome! to our website I hope you like it.')
+    
+     console.log(
+      abc
+     );
+     if (abc === true) {
+      const promp = prompt('enter your name')
+      console.log(promp);
+      setuser(promp)
       
-    }
+     }
+     
+     
+     
+      
+    
   }
 
   return (
@@ -16,9 +31,11 @@ const Home = () => {
         <div className="hero-content">
           <h1>React JS</h1>
           <p>
+            hello! {user}, <br />
+            I hope you like it.<br />
             Build modern, fast and interactive user interfaces with React.
           </p>
-          <button onClick={showalert}>Click me!</button>
+          <button> <Link to="/code">learn more</Link></button>
         </div>
 
         <img
